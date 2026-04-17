@@ -4059,7 +4059,7 @@ Protection</text>
 </instance>
 <instance part="ANT1" gate="G$1" x="251.46" y="607.06" smashed="yes">
 <attribute name="NAME" x="252.73" y="617.22" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="232.41" y="614.68" size="1.778" layer="96" align="center-left"/>
+<attribute name="VALUE" x="247.65" y="612.14" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="C11" gate="C$1" x="175.26" y="640.08" smashed="yes">
 <attribute name="NAME" x="176.784" y="640.461" size="1.778" layer="95"/>
@@ -4830,9 +4830,9 @@ Protection</text>
 <pinref part="C29" gate="G$1" pin="1"/>
 <pinref part="SW_DN" gate="A" pin="1"/>
 <wire x1="215.9" y1="259.08" x2="215.9" y2="251.46" width="0.1524" layer="91"/>
-<junction x="220.98" y="251.46"/>
 <wire x1="220.98" y1="251.46" x2="220.98" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="SUPPLY53" gate="G$1" pin="GND"/>
+<junction x="220.98" y="251.46"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="SHIELD"/>
@@ -5876,13 +5876,6 @@ Protection</text>
 <label x="60.96" y="276.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="OUT" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="OUT-"/>
-<wire x1="223.52" y1="360.68" x2="226.06" y2="360.68" width="0.1524" layer="91"/>
-<label x="226.06" y="360.68" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="SDA/1.4C" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="SDA"/>
@@ -5927,6 +5920,11 @@ Protection</text>
 <pinref part="TP_ON" gate="G$1" pin="TP"/>
 <wire x1="246.38" y1="393.7" x2="243.84" y2="393.7" width="0.1524" layer="91"/>
 <label x="243.84" y="393.7" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="OUT-"/>
+<wire x1="223.52" y1="360.68" x2="226.06" y2="360.68" width="0.1524" layer="91"/>
+<label x="226.06" y="360.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -6082,33 +6080,31 @@ Protection</text>
 <label x="177.8" y="276.86" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="281.94" x2="203.2" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="C31" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="P0.14/1.5D" class="0">
 <segment>
 <pinref part="SW_ENT" gate="A" pin="2"/>
 <wire x1="193.04" y1="274.32" x2="193.04" y2="276.86" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="276.86" x2="205.74" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="276.86" x2="203.2" y2="276.86" width="0.1524" layer="91"/>
 <label x="205.74" y="276.86" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<wire x1="226.06" y1="281.94" x2="226.06" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="C29" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="C31" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="271.78" x2="203.2" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="276.86" x2="203.2" y2="281.94" width="0.1524" layer="91"/>
+<junction x="203.2" y="276.86"/>
+<wire x1="203.2" y1="276.86" x2="205.74" y2="276.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="P1.02/1.6C" class="0">
 <segment>
-<wire x1="215.9" y1="274.32" x2="228.6" y2="274.32" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="274.32" x2="226.06" y2="274.32" width="0.1524" layer="91"/>
 <pinref part="SW_DN" gate="A" pin="2"/>
 <label x="228.6" y="274.32" size="1.016" layer="95" xref="yes"/>
+<pinref part="C29" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="274.32" x2="228.6" y2="274.32" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="271.78" x2="226.06" y2="274.32" width="0.1524" layer="91"/>
+<junction x="226.06" y="274.32"/>
+<wire x1="226.06" y1="274.32" x2="226.06" y2="281.94" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="DN" class="0">
